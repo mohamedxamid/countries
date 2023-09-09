@@ -436,6 +436,26 @@ a {
     opacity: 0.6;
 }
 
+@media only screen and (max-width: 1100px) {
+    .index-countries-item {
+        width: calc(33% - 75px);
+    }
+
+    .index-country-flag {
+        width: 100%;
+    }
+
+    .index-country-info {
+        padding: 18px 18px 36px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .index-countries-item {
+        width: calc(50% - 75px);
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .filters {
         flex-wrap: wrap;
@@ -459,6 +479,15 @@ a {
 
     .site-header-theme-toggler-text {
         display: none;
+    }
+
+    .index-countries-list {
+        justify-content: center;
+    }
+
+    .index-countries-item {
+        width: 100%;
+        max-width: 265px;
     }
 }
 
