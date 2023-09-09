@@ -149,6 +149,7 @@ a {
     color: var(--text-color);
     background-color: transparent;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .site-header-theme-toggler:hover {
@@ -430,4 +431,17 @@ a {
 
 .country-page-border-countries-link:active {
     opacity: 0.6;
+}
+
+@media only screen and (max-width: 500px) {
+    .site-header-container {
+        flex-wrap: wrap;
+    }
+    .site-header-logo {
+        margin-right: 26px;
+    }
+
+    .site-header-theme-toggler-text {
+        display: none;
+    }
 }
